@@ -1,0 +1,16 @@
+dataset:
+  name: ocean_das
+  pair_id:
+  - 3
+model:
+  name: Koopman
+  observables: RandomFourierFeatures
+  observables_cat_identity: false
+  observables_float_param: 0.8876116484484994
+  observables_include_state: true
+  observables_int_param: 2
+  observables_rbf_centers_number: 84
+  regressor: EDMD
+  regressor_dmd_rank: 30
+  regressor_tlsq_rank: 83
+  seed: 0

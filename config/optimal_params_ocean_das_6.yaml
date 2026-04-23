@@ -1,0 +1,16 @@
+dataset:
+  name: ocean_das
+  pair_id:
+  - 6
+model:
+  name: Koopman
+  observables: RadialBasisFunctions
+  observables_cat_identity: false
+  observables_float_param: 0.5818052103637458
+  observables_include_state: true
+  observables_int_param: 1
+  observables_rbf_centers_number: 316
+  regressor: EDMD
+  regressor_dmd_rank: 22
+  regressor_tlsq_rank: 57
+  seed: 0
