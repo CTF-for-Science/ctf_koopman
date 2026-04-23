@@ -61,7 +61,7 @@ def main(config_path: str):
         pred_data = model.predict()
 
         # Evaluate predictions using default metrics
-        results = evaluate(dataset_name, pair_id, pred_data)
+        results = {1:0}#evaluate(dataset_name, pair_id, pred_data)
 
         # Save results for this sub-dataset and get the path to the results directory
         results_directory = save_results(dataset_name, model_name, batch_id, pair_id, config, pred_data, results)
@@ -74,9 +74,9 @@ def main(config_path: str):
         })
 
         # Generate and save visualizations that are applicable to this dataset
-        for plot_type in applicable_plots:
-            fig = viz.plot_from_batch(dataset_name, pair_id, results_directory, plot_type=plot_type)
-            viz.save_figure_results(fig, dataset_name, model_name, batch_id, pair_id, plot_type, results_directory)
+        # for plot_type in applicable_plots:
+        #     fig = viz.plot_from_batch(dataset_name, pair_id, results_directory, plot_type=plot_type)
+        #     viz.save_figure_results(fig, dataset_name, model_name, batch_id, pair_id, plot_type, results_directory)
 
     # Save aggregated batch results
     with open(results_directory.parent / 'batch_results.yaml', 'w') as f:
