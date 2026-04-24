@@ -1,0 +1,15 @@
+dataset:
+  name: msfr
+  pair_id: 4
+model:
+  name: Koopman
+  observables: Polynomial
+  observables_cat_identity: false
+  observables_float_param: 0.5045558824947121
+  observables_include_state: false
+  observables_int_param: 1
+  observables_rbf_centers_number: 767
+  regressor: DMD
+  regressor_dmd_rank: 88
+  regressor_tlsq_rank: 44
+  seed: 0

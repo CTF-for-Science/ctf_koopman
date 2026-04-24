@@ -1,0 +1,15 @@
+dataset:
+  name: msfr
+  pair_id: 8
+model:
+  name: Koopman
+  observables: RandomFourierFeatures
+  observables_cat_identity: false
+  observables_float_param: 0.8499260312161414
+  observables_include_state: true
+  observables_int_param: 1
+  observables_rbf_centers_number: 500
+  regressor: EDMD
+  regressor_dmd_rank: 56
+  regressor_tlsq_rank: 85
+  seed: 0

@@ -1,0 +1,15 @@
+dataset:
+  name: msfr
+  pair_id: 2
+model:
+  name: Koopman
+  observables: Identity
+  observables_cat_identity: true
+  observables_float_param: 0.5386394813669106
+  observables_include_state: false
+  observables_int_param: 1
+  observables_rbf_centers_number: 359
+  regressor: DMD
+  regressor_dmd_rank: 97
+  regressor_tlsq_rank: 6
+  seed: 0
